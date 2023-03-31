@@ -201,6 +201,7 @@ footer p {
 
 .social-media li {
   margin-right: 10px;
+  transition: .5s;
 }
 
 .social-media a {
@@ -212,14 +213,43 @@ footer p {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #333;
+  background-color:#ccc;
   transition: background-color 0.3s ease;
-}
-
-.social-media a:hover {
-  background-color: #555;
+} 
+.social-media li:hover {
+  color: #d4d4d4;
+  background-color: #d4d4d4;
+  transform: rotate(360deg);
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .social-media i {
   font-size: 20px;
+}
+.skills {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.skills.delayed {
+  animation: appear 1s ease-out 2s forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add opacity to the entire section */
+.skills h2,
+.skills ul {
+  opacity: 0.8;
 }
