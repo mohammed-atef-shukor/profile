@@ -1,0 +1,225 @@
+/* Set default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Style header and navigation */
+header {
+  background-color: #333;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Style profile section */
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.profile-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Style skills section */
+.skills {
+  padding: 50px;
+  text-align: center;
+}
+
+.skills ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.skills ul li {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+/* Style projects section */
+.projects {
+  padding: 50px;
+  text-align: center;
+}
+
+.projects ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.projects ul li {
+  margin-bottom: 10px;
+}
+
+.projects ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.projects ul li a:hover {
+  color: #555;
+}
+
+/* Style contact section */
+.contact {
+  padding: 50px;
+  text-align: center;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  width: 100%;
+}
+
+form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #555;
+}
+ 
+.projects {
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+.projects h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projects li {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.projects li:hover {
+  background-color: #ddd;
+}
+
+.projects a {
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+}
+ /* Style the footer */
+footer {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: Consolas, "Courier New", monospace;
+  line-height: 19px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the "Follow us on social media" message */
+footer p {
+  margin-bottom: 10px;
+}
+
+/* Style the social media icons */
+.social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media li {
+  margin-right: 10px;
+}
+
+.social-media a {
+  color: #d4d4d4;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+  background-color: #555;
+}
+
+.social-media i {
+  font-size: 20px;
+}
