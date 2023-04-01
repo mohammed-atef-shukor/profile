@@ -13,12 +13,5 @@ scrollToTopBtn.addEventListener("click", function() {
   window.scrollTo(0, 0);
 });
 
-// Add a mobile menu toggle
-var mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
-var nav = document.querySelector("nav");
 
-mobileMenuToggle.addEventListener("click", function() {
-  nav.classList.toggle("show");
-})
 
- 

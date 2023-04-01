@@ -46,7 +46,7 @@
         </section>
         <section class="projects">
             <h2>Projects</h2>
-            <ul>
+            <ul id="project-list">
                 <li><a href="https://mohammed-atef-shukor.github.io/temp2/" target="_blank">Project 1</a></li>
                 <li><a href="https://mohammed-atef-shukor.github.io/Temp-4-H-c/" target="_blank">Project 2</a></li>
                 <li><a href="https://mohammed-atef-shukor.github.io/temp3/" target="_blank">Project 3</a></li>
@@ -54,7 +54,52 @@
                 <li><a href="https://mohammed-atef-shukor.github.io/mangeTask" target="_blank">Project 5</a></li>
                 <li><a href="https://mohammed-atef-shukor.github.io/portfolio/" target="_blank">Project 6</a></li>
             </ul>
+            <button id="next-btn">Next</button>
         </section>
+        <script>
+                const projectList = document.getElementById('project-list');
+                const projectItems = projectList.children;
+                let currentProjectIndex = 0;
+                const nextButton = document.getElementById('next-btn');
+                nextButton.addEventListener('click', showNextProjects);
+
+                // Show the first three projects initially
+                projectItems[0].style.display = 'block';
+                projectItems[1].style.display = 'block';
+                projectItems[2].style.display = 'block';e
+
+                function showNextProjects() {
+                // Hide the current projects
+                const currentProject1 = projectItems[currentProjectIndex];
+                currentProject1.style.display = 'none';
+                const currentProject2 = projectItems[currentProjectIndex + 1];
+                currentProject2.style.display = 'none';
+                const currentProject3 = projectItems[currentProjectIndex + 2];
+                currentProject3.style.display = 'none';
+
+                // Increment the index to show the next three projects
+                currentProjectIndex += 3;
+                if (currentProjectIndex >= projectItems.length) {
+                    currentProjectIndex = 0;
+                }
+
+                // Show the next three projects
+                const nextProject1Index = currentProjectIndex;
+                const nextProject1 = projectItems[nextProject1Index];
+                nextProject1.style.display = 'block';
+                const nextProject2Index = currentProjectIndex + 1 < projectItems.length ? currentProjectIndex + 1 : 0;
+                const nextProject2 = projectItems[nextProject2Index];
+                nextProject2.style.display = 'block';
+                const nextProject3Index = currentProjectIndex + 2 < projectItems.length ? currentProjectIndex + 2 : 0;
+                const nextProject3 = projectItems[nextProject3Index];
+                nextProject3.style.display = 'block';
+
+                // Scroll to the first of the next three projects
+                projectList.scrollLeft = nextProject1.offsetLeft - (projectList.offsetWidth - nextProject1.offsetWidth) / 2;
+                }
+
+        </script>
+        
         <section class="contact" id="Contact">
             <h2>Contact Us</h2>
             <form action="https://formsubmit.co/mshokor2005@gmail.com" method="POST" >
@@ -85,3 +130,6 @@
       <script src="main.js"></script>
 </body>
 </html>
+
+
+
